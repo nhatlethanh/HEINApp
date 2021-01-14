@@ -1,0 +1,19 @@
+R_DEF: Internal format may change without notice
+local
+attr? imageResources
+color color
+color colorPrimary
+color colorPrimaryDark
+drawable ic_photo_size_select_actual_black_24dp
+drawable tab_indicator_default
+drawable tab_indicator_selected
+drawable tab_selector
+id activity_splash
+id imgItem
+id pager_splash
+id tabDots
+layout item_view_pager_image
+layout sliding_splash_view
+string app_name
+style AppTheme
+styleable SlidingSplashView imageResources

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_explore"
+        android:icon="@drawable/home"
+        android:title="Trang chủ"
+        android:iconTint="@color/colorBlack"/>
+    <item
+        android:id="@+id/navigation_cate"
+        android:icon="@drawable/cate"
+        android:title="Danh mục"
+        android:iconTint="@color/colorBlack"/>
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_profile_nv"
+        android:title="Tài khoản"
+        android:iconTint="@color/colorBlack"/>
+</menu>
