@@ -32,6 +32,7 @@ import com.src.Module.Home.presenter.IBanner;
 import com.src.Module.Home.presenter.IProduct;
 import com.src.Module.Home.presenter.PresenterBanner;
 import com.src.Module.Home.presenter.PresenterProduct;
+import com.src.Navigation2Activity;
 import com.src.NavigationActivity;
 import com.src.Utils.DialogLoading;
 import com.src.Utils.ItemOffsetDecoration;
@@ -79,16 +80,16 @@ public class ExploreFragment2 extends Fragment implements IProduct.IViewProduct,
                 toolbarExplore.setTitle("H E I N");
 
                 //hide
-                NavigationActivity.navigation.setVisibility(View.GONE);
+                Navigation2Activity.navigation2.setVisibility(View.GONE);
 
                 TranslateAnimation animate = new TranslateAnimation(
                         0,                 // fromXDelta
                         0,                 // toXDelta
-                        NavigationActivity.navigation.getHeight(),  // fromYDelta
+                        Navigation2Activity.navigation2.getHeight(),  // fromYDelta
                         0);                // toYDelta
                 animate.setDuration(200);
                 animate.setFillAfter(true);
-                NavigationActivity.navigation.startAnimation(animate);
+                Navigation2Activity.navigation2.startAnimation(animate);
 
 
             } else if (scrollY < oldScrollY) {
@@ -97,15 +98,15 @@ public class ExploreFragment2 extends Fragment implements IProduct.IViewProduct,
                 toolbarExplore.setTitle("H E I N");
 
                 //show
-                NavigationActivity.navigation.setVisibility(View.VISIBLE);
+                Navigation2Activity.navigation2.setVisibility(View.VISIBLE);
                 TranslateAnimation animate = new TranslateAnimation(
                         0,                 // fromXDelta
                         0,                 // toXDelta
-                        NavigationActivity.navigation.getHeight(),  // fromYDelta
+                        Navigation2Activity.navigation2.getHeight(),  // fromYDelta
                         0);                // toYDelta
                 animate.setDuration(200);
                 animate.setFillAfter(true);
-                NavigationActivity.navigation.startAnimation(animate);
+                Navigation2Activity.navigation2.startAnimation(animate);
 
             }
         });

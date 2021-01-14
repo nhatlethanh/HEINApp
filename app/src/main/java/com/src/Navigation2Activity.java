@@ -28,7 +28,7 @@ public class Navigation2Activity extends AppCompatActivity {
 
     public static ArrayList<OrderProvisional> orderDetails;
     private ViewPager viewPager;
-    public static BottomNavigationView navigation;
+    public static BottomNavigationView navigation2;
     private MenuItem prevMenuItem;
 
 
@@ -37,8 +37,8 @@ public class Navigation2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_navigation2);
-        navigation = findViewById(R.id.navigation2);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        navigation2 = findViewById(R.id.navigation2);
+        navigation2.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         viewPager = findViewById(R.id.viewNavigation2);
         viewPager.setOffscreenPageLimit(1);
 
@@ -59,11 +59,11 @@ public class Navigation2Activity extends AppCompatActivity {
                 if (prevMenuItem != null) {
                     prevMenuItem.setChecked(false);
                 } else {
-                    navigation.getMenu().getItem(0).setChecked(false);
+                    navigation2.getMenu().getItem(0).setChecked(false);
                 }
 
-                navigation.getMenu().getItem(position).setChecked(true);
-                prevMenuItem = navigation.getMenu().getItem(position);
+                navigation2.getMenu().getItem(position).setChecked(true);
+                prevMenuItem = navigation2.getMenu().getItem(position);
 
             }
 
