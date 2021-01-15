@@ -19,6 +19,7 @@ import com.src.Module.Home.view.ExploreFragment;
 import com.src.Module.Home.view.ExploreFragment2;
 import com.src.Module.Order.view.MyOrderActivity;
 import com.src.Module.User.view.ProfileFragment;
+import com.src.Module.User.view.ProfileFragment2;
 import com.src.Utils.ViewPagerNavigationAdapter;
 
 import java.util.ArrayList;
@@ -81,11 +82,11 @@ public class Navigation2Activity extends AppCompatActivity {
         ViewPagerNavigationAdapter adapter = new ViewPagerNavigationAdapter(getSupportFragmentManager());
         ExploreFragment2 exploreFragment = new ExploreFragment2();
         CateFragment cateFragment = new CateFragment();
-        ProfileFragment profileFragment = new ProfileFragment();
+        ProfileFragment2 profileFragment2 = new ProfileFragment2();
         adapter.addFragment(exploreFragment);
         adapter.addFragment(cateFragment);
 
-        adapter.addFragment(profileFragment);
+        adapter.addFragment(profileFragment2);
         viewPager.setAdapter(adapter);
     }
 
@@ -101,7 +102,7 @@ public class Navigation2Activity extends AppCompatActivity {
 
                 return true;
             case R.id.navigation_profile:
-                viewPager.setCurrentItem(3);
+                viewPager.setCurrentItem(2);
 
                 return true;
         }

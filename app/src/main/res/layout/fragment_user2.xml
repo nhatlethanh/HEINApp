@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gpb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context="com.src.Module.User.view.ProfileFragment2">
+    <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
+        android:id="@+id/progressBarProfile"
+        android:layout_width="50dp"
+        android:visibility="gone"
+        android:layout_height="50dp"
+        android:background="@drawable/round_icon_cart"
+        android:gravity="center"
+        gpb:layout_constraintBottom_toBottomOf="parent"
+        gpb:layout_constraintEnd_toEndOf="parent"
+        gpb:layout_constraintStart_toStartOf="parent"
+        gpb:layout_constraintTop_toTopOf="parent"
+        gpb:type="nexus_rotation_cross" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        gpb:layout_constraintBottom_toBottomOf="parent"
+        gpb:layout_constraintEnd_toEndOf="parent"
+        gpb:layout_constraintHorizontal_bias="0.0"
+        gpb:layout_constraintStart_toStartOf="parent"
+        gpb:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageProfile"
+                android:layout_width="123dp"
+                android:layout_height="121dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_profile" />
+            <TextView
+                android:id="@+id/txtNameProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="25dp"
+                tools:text="Tên người dùng" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="30dp"
+                android:background="@color/colorBlack"
+                android:text="Đăng nhập"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
