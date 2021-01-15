@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
@@ -18,6 +19,7 @@ import com.src.Module.Category.view.CateFragment;
 import com.src.Module.Favourite.view.FavouriteFragment;
 import com.src.Module.Home.view.ExploreFragment;
 import com.src.Module.Order.view.MyOrderActivity;
+import com.src.Module.Order.view.OrderFragment;
 import com.src.Module.User.view.ProfileFragment;
 import com.src.Utils.ViewPagerNavigationAdapter;
 
@@ -84,10 +86,12 @@ public class NavigationActivity extends AppCompatActivity {
         FavouriteFragment favouriteFragment = new FavouriteFragment();
         CateFragment cateFragment = new CateFragment();
         ProfileFragment profileFragment = new ProfileFragment();
+        Fragment orderFragment = new Fragment();
         adapter.addFragment(exploreFragment);
         adapter.addFragment(cateFragment);
         adapter.addFragment(favouriteFragment);
         adapter.addFragment(profileFragment);
+        adapter.addFragment(orderFragment);
         viewPager.setAdapter(adapter);
     }
 
@@ -104,6 +108,10 @@ public class NavigationActivity extends AppCompatActivity {
                 return true;
             case R.id.navigation_favourite:
                 viewPager.setCurrentItem(2);
+
+                return true;
+            case R.id.navigation_order:
+                viewPager.setCurrentItem(4);
 
                 return true;
             case R.id.navigation_profile:

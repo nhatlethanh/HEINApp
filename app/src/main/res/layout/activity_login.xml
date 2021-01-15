@@ -48,7 +48,6 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:inputType="textPassword"/>
-
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
@@ -56,10 +55,9 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="30dp"
-            android:background="@color/colorBlack"
+            android:background="@drawable/shadow_den"
             android:text="Đăng nhập"
             android:textAllCaps="false"
-
             android:textColor="@color/colorWhite"
             android:textSize="@dimen/text_size_20" />
         <Button
@@ -70,20 +68,17 @@
             android:layout_marginBottom="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginTop="10dp"
-            android:background="@color/colorWhite"
+            android:background="@drawable/shadow_trang"
             android:text="Quay lại"
             android:textAllCaps="false"
-
             android:textColor="@color/colorBlack"
             android:textSize="@dimen/text_size_20" />
-
         <LinearLayout
             android:id="@+id/signUpNew"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:gravity="center">
-
             <TextView
                 android:id="@+id/noAccount"
                 android:layout_width="wrap_content"
@@ -91,7 +86,6 @@
                 android:text="Chưa có tài khoản?"
                 android:textColor="@color/colorBlack"
                 android:textSize="@dimen/text_size_18" />
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

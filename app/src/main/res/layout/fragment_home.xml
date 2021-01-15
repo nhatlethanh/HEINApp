@@ -83,6 +83,7 @@
                     android:layout_marginLeft="20dp"
                     android:lineSpacingMultiplier="1.5"
                     android:text="HÀNG MỚI VỀ"
+                    android:textStyle="bold"
                     android:textColor="@color/colorBlack"
                     android:textSize="20dp" />
                 <ImageView
@@ -101,6 +102,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal">
                 <TextView
                     android:layout_width="wrap_content"
@@ -109,6 +111,7 @@
                     android:layout_marginLeft="20dp"
                     android:lineSpacingMultiplier="1.5"
                     android:text="TẤT CẢ SẢN PHẨM"
+                    android:textStyle="bold"
                     android:textColor="@color/colorBlack"
                     android:textSize="20dp" />
                 <ImageView
