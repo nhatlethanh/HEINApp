@@ -17,6 +17,8 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.jpardogo.android.googleprogressbar.library.GoogleProgressBar;
 
 import es.dmoral.toasty.Toasty;
+
+import com.src.Navigation2Activity;
 import com.src.NavigationActivity;
 import com.src.Module.Login.presenter.PresenterLogin;
 import com.src.Module.Register.view.RegisterActivity;
@@ -24,7 +26,7 @@ import com.src.Utils.DialogLoading;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener,IViewLogin {
     private LinearLayout bodyLogin,signUpNew;
-    private Button btnLogin;
+    private Button btnLogin,btnBack;
     private PresenterLogin presenterLogin;
     private TextInputEditText edtEmailLogin,edtPasswordLogin;
     private GoogleProgressBar googleProgressBar;
@@ -44,6 +46,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         bodyLogin = findViewById(R.id.bodyLogin);
         signUpNew = findViewById(R.id.signUpNew);
         btnLogin = findViewById(R.id.btnLogin);
+        btnBack = findViewById(R.id.btnBack);
         edtEmailLogin = findViewById(R.id.edtEmailLogin);
         edtPasswordLogin = findViewById(R.id.edtPasswordLogin);
         googleProgressBar = findViewById(R.id.google_progress);
@@ -53,7 +56,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 //        edtPasswordLogin.setText("123456");
         btnLogin.setOnClickListener(this);
         signUpNew.setOnClickListener(this);
-
+        btnBack.setOnClickListener(this);
     }
 
     @Override
@@ -67,6 +70,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     DialogLoading.LoadingGoogle(true,googleProgressBar);
                     presenterLogin.handlerLogin(edtEmailLogin.getText().toString().trim(),edtPasswordLogin.getText().toString().trim());
                 }
+                break;
+            case  R.id.btnBack:
+                startActivity(new Intent(LoginActivity.this, Navigation2Activity.class));
                 break;
         }
     }
