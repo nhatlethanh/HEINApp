@@ -56,7 +56,6 @@ public class ProfileFragment2 extends Fragment implements IViewProfile, View.OnC
     private void initView(View v) {
         presenterProfile = new PresenterProfile(this);
 
-        imgProfile = v.findViewById(R.id.imageProfile);
         layoutLogout = v.findViewById(R.id.layoutLogout);
         btnLogout = v.findViewById(R.id.btnLogout);
         btnLogout.setOnClickListener(new View.OnClickListener() {

@@ -15,7 +15,7 @@
             <com.chabbal.sliding.SlidingSplashView
                 android:id="@+id/introProductDetail"
                 android:layout_width="match_parent"
-                android:layout_height="500dp">
+                android:layout_height="550dp">
             </com.chabbal.sliding.SlidingSplashView>
             <View
                 android:layout_width="match_parent"
@@ -62,7 +62,7 @@
                 android:padding="5dp"
                 android:text="Sản phẩm"
                 android:textColor="#000000"
-                android:textSize="15dp"
+                android:textSize="20dp"
                 android:textStyle="bold" />
             <LinearLayout
                 android:layout_width="match_parent"
@@ -92,7 +92,14 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đánh giá của khách hàng"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            ></TextView>
         <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
             android:id="@+id/progress_review"
             android:visibility="gone"

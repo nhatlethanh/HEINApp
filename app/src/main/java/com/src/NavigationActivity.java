@@ -110,10 +110,6 @@ public class NavigationActivity extends AppCompatActivity {
                 viewPager.setCurrentItem(2);
 
                 return true;
-            case R.id.navigation_order:
-                viewPager.setCurrentItem(4);
-
-                return true;
             case R.id.navigation_profile:
                 viewPager.setCurrentItem(3);
 

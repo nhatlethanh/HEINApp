@@ -62,7 +62,7 @@ public class ProfileFragment extends Fragment implements IViewProfile, View.OnCl
         txtAddress = v.findViewById(R.id.txtAddress);
         txtEmailProfile = v.findViewById(R.id.txtEmailProfile);
         progressBarProfile = v.findViewById(R.id.progressBarProfile);
-        imgProfile = v.findViewById(R.id.imageProfile);
+
         layoutLogout = v.findViewById(R.id.layoutLogout);
         layoutChangePassword = v.findViewById(R.id.layoutChangePassword);
         layoutChangePassword.setOnClickListener(this);

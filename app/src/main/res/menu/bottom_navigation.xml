@@ -16,11 +16,6 @@
         android:title="Yêu thích"
         android:iconTint="@color/colorBlack"/>
     <item
-        android:id="@+id/navigation_order"
-        android:icon="@drawable/cart"
-        android:title="Đơn hàng"
-        android:iconTint="@color/colorBlack"/>
-    <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_profile_nv"
         android:title="Tài khoản"
