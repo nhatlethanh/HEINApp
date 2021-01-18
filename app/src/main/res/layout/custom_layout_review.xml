@@ -12,8 +12,9 @@
         android:id="@+id/imgAvatarReview"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/ic_profile"
+        android:background="@drawable/ic_profile"
         app:civ_border_color="#fff"
+        android:layout_gravity="center"
         app:civ_border_width="1dp"
         tools:ignore="MissingConstraints" />
 
@@ -46,6 +47,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorBlack"
                 android:textSize="@dimen/text_size_15"
+                android:textStyle="bold"
                 tools:text="Người dùng" />
 
             <TextView
