@@ -184,11 +184,10 @@ public class MyOrderActivity extends AppCompatActivity implements IOnClickCart, 
         alertDialog.show();
 
 
-        NavigationActivity.orderDetails.clear();
-        NavigationActivity.numberBadge = 0;
+//        NavigationActivity.orderDetails.clear();
+//        NavigationActivity.numberBadge = 0;
         exploreFragmentCallback.OnClickBadge();
-
-        new Handler().postDelayed(() -> finish(), 3000);
+        new Handler().postDelayed(() -> finish(), 500);
     }
 //
 //    @Override

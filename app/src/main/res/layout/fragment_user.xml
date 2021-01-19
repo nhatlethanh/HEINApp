@@ -34,41 +34,51 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="50dp"
-            android:background="@color/colorBlack"
+            android:background="@color/colorWhite"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="50dp"
                 android:text="H E I N "
-                android:textColor="@color/colorWhite"
-                android:textSize="75dp"
-                android:layout_marginTop="20dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="50dp"
 
                 android:textStyle="bold" />
-            <TextView
 
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-              android:textStyle="italic"
-                android:gravity="center"
-                android:textColor="@color/colorWhite"
-                android:textSize="25dp"
-                android:text="Xin chào, " />
-            <TextView
-                android:id="@+id/txtNameProfile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:textColor="@color/colorWhite"
-                android:textSize="25dp"
-                tools:text="Tên người dùng" />
+                android:layout_marginTop="20dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Xin chào, "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/txtNameProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    tools:text="Tên người dùng" />
+            </LinearLayout>
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -174,7 +184,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="150dp"
             android:gravity="center"
             android:orientation="horizontal"
             >
@@ -183,6 +193,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="30dp"
+
                 android:layout_marginRight="30dp"
                 android:textStyle="bold"
                 android:background="@drawable/shadow_trang"
